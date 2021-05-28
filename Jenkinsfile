@@ -7,12 +7,14 @@ pipeline {
   
   options {
     // Para ficheros de log
-    //buildDiscarder(logRotator(daysToKeepStr: '3', numToKeepStr: '3')),
+    buildDiscarder(logRotator(daysToKeepStr: '3', numToKeepStr: '3'))
     
+    /*
     buildDiscarder (logRotator(
       daysToKeepStr: '15',
         numToKeepStr: '10'
     ))
+    */
   }
   
   stages {
